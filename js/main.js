@@ -1,5 +1,17 @@
 $(function() {
 
+    if (Modernizr.geolocation) {
+        navigator.geolocation.getCurrentPosition(success);
+
+        function success(position) {
+            var lat = position.coords.latitude;
+            var long = position.coords.longitude;
+            setUI(lat, long);
+        }
+    } else {
+        setUI(43.7015702, -116.51070259999999 );
+    }
+
     $.get('http://www.telize.com/geoip', function(data){
         setUI(data.latitude, data.longitude);
     });
