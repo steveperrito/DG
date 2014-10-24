@@ -12,10 +12,6 @@ $(function() {
         setUI(43.7015702, -116.51070259999999 );
     }
 
-    $.get('http://www.telize.com/geoip', function(data){
-        setUI(data.latitude, data.longitude);
-    });
-
     function setUI(lat, lng) {
         var myLatlng = new google.maps.LatLng(lat,lng);
 
