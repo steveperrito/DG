@@ -1,0 +1,34 @@
+#map {
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-right: 40px;
+}
+
+#dg-img-div {
+    height: 400px;
+    width: 400px;
+    float: right;
+}
+
+#dg-img-div h3{
+    margin-top: 145px;
+}
+
+.map-row {
+    margin-top: 40px;
+}
+
+.dg-img {
+    display: none;
+}
+
+.zoom-out {
+    margin-top: 183px;
+}
+
+.zoom-btn {
+    text-align: center;
+    visibility: hidden;
+}
+
